@@ -1,0 +1,31 @@
+Lab 5: Finite State Machines, Obstacle Avoidance, Trash Sweeping
+
+1. Explore FSM_parking_ticket.py to understand how a FSM works. Note that two 
+threads are needed, one for the FSM and one that generates events.
+
+Obstacle Avoidance
+
+2. Design a 3-state FSM for obstacle avoidance on paper. The 3-state FSM 
+includes transition of states in the machine, events/triggers, and 
+action/callbacks.
+
+3. Implement the hamster sensing and motion control callback functions for 
+obstacle avoidance, integrating it with the FSM. FSM_starter.py contains a 
+simple implementation of an FSM that uses one event queue. 
+
+Trash Sweeping (Stretch Assignment)
+
+4. The trash sweeping program needs to:
+	Detect trash and signal with the LEDs when trash is detected
+	Push the trash
+	Indicate when trash is pushed outside the black border
+	"Trash" is defined as small light obstacles inside the border
+	
+5. Design and implement a FSM for trash sweeping. 
+
+Extensions for trash sweeping:
+	- Align the Hamster to the trash before pushing, to reduce the chance of 
+	losing trash due to lateral motion during pushing
+	- Recover from loss of trash during pushing
+	- Stop sweeping when no more trash is in the workspace
+	- Be better at finding trash

@@ -1,0 +1,22 @@
+Lab10 - Re-plan and local avoidance
+
+Assignments:
+. PRIORITY: Re-plan in grid space, assuming the following grid navigation components are finished:
+	1. generate graph from given grid dimension and obstacle locations
+	2. search graph and find a path from any given start and goal
+	3. hamster executes plan on grid
+
+. STRETCH: Implement obstacle avoidance using APF, artificial potential field. Adjust direction of movement using proximity sensors.
+
+
+  . Re-plan requirements: (if you have time)
+  	a) Hamster detects new obstacle while executing a plan. Re-plan program needs to add
+  	  the new obstacle to obstacle list, generate a new graph. Hamster current
+  	  pose is the new start pose.
+	b) Re-plan program searches for a path for a new start and same prior goal
+	c) execute plan
+	d) Re-plan program should be able to repeat the above, i.e. dealing with more
+	  unexpected obstacles until goal is reached.
+
+. Work on algorithms for continuous space planning. (optional)
+. Implement algorithms for continuous space planning. (optional)

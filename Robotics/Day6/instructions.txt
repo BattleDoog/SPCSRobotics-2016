@@ -1,0 +1,24 @@
+Lab6 - Hamster simulator and collision checking
+
+Students are given the hamster simulation code. They need to do the
+following:
+
+1. To make a simulator for their specific hamster by tuning following parameters:
+	prox_conv_l*, prox_conv_r*, and d_factor** (distance factor) in update_virtual_world().
+
+	* prox_conv_l and prox_conv_r are used to convert proximity sensors raw reading
+	  to the red line segment length on screen.
+
+	In order to tune prox_conv_l and prox_conv_r, students need to write a program that
+	they can use to find the mapping from the proximity sensor reading to distance from object.
+
+	** 1 grid on screen corresponds to 2cm in real world. Students need to map real robots
+	linear speed to simulated robots speed on screen.
+	 
+2. Implement collision checking for hamster simulator. There is a place holder in tk_hamster_simulator.py,
+  virtual_world class, in_collision(). It returns True and False but is not implemented yet.
+  The 'go' button in the simulator program is implemented to move hamster in real world while
+  avoiding obstacles. The obstacle avoidance, i.e., collision checking against the
+  map***, is not implemented for the simulator. Note that obstacles are rectangles 
+  with edges parallel to x- and y-axis.
+

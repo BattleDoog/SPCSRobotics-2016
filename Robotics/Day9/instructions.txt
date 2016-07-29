@@ -1,0 +1,11 @@
+Day9
+
+WITH PARTNERS
+1) Modify grid_graph_draw_BDS_path_demo.py to include Dijkstra search
+2) Create a graph with weighted edges to show functionality/get checked off with TA
+
+WITH OR WITHOUT PARTNERS
+3) Continute to work on grid navigation/trash cleaning/maze solving/C-space/etc
+
+
+weight name edges

@@ -1,0 +1,36 @@
+Lab8 - C-space, discretization, connectivity
+
+
+Below is a map of a work space:
+		    obs1 = [-100, -180, 0, -140]
+        obs2 = [-140, -180, -100, -80]
+        obs3 = [-100, 140, 0, 180]
+        obs4 = [-140, 80, -100, 180]
+        obs5 = [0, -50, 40, 50]
+        obs6 = [-260, -20, -220, 20]
+        obs7 = [40, 60, 140, 100]
+        virtual_world area = [-300,-200,300,200]
+
+Here is a break-down of what is involved in continuous space path planning:
+
+. Compute C-obstacles from given work space map.
+. Implement 'cutting' algorithm to compute free cells
+. Compute connectivity of two free cells by locating the midpoint of overlapped free edges.
+  A free edge is the overlapped edge shared by two free cells. These points referred to as
+  free points and are nodes in the resulting graph.
+. Compute distance between two neighboring free points connecting. This distance is the edge cost
+  in the graph.
+. Genrate graph using the nodes and edges from above.
+. Find a path by searching(Dijkstra) the graph for any given start and goal.
+
+
+Assignments:
+. Grid navigation:
+  1. Generate graph from a given grid dimension and obstacle locations
+  2. BFS search graph and find a path from some given start and goal
+  3. Have hamster execute plan on grid
+
+. Develop algorithms for tasks listed in continuous space planning. Show
+  your algorithms to TAs using block/flow diagrams before coding starts.
+
+. Implement some of the algorithms as an isolated task. For example, cell cutting. (optional)

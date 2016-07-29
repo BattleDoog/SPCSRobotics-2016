@@ -1,0 +1,19 @@
+Lab11 - Local avoidance using Artificial Potential Field method.
+
+Starter program: tk_robot_simulator_localavoidance_APF.py.
+
+
+How your program is tested:
+Once a goal location is specified, select to run the program in "Real Robot" mode.
+
+
+Assignment: 
+There is a method, avoidance(), in ThreadedClient class. It is a simple avoidance program. 
+It does not know about the goal. Reimplement this method by using APF method as described below.
+
+A given goal imposes an "attractive force" on the robot. While in "Real Robot" mode, 
+your program can use the robot proximity sensor input to detect the "repulsive force". 
+Your program controls Hamster motion by taking into account of both forces and moves robot towards the user
+specified goal while avoiding obstacles.
+
+   
